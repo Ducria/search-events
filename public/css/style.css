@@ -1,0 +1,177 @@
+*{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header{
+    background-color:#FFF;
+    border-bottom: 1px solid #CCC;
+
+}
+
+.row{
+    margin: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.btn-primary{
+    background-color: rgb(19, 21, 155);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(11, 14, 90);
+}
+
+
+/* NAVBAR */
+#navbar{
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+#navbar img{
+    justify-content: space-between;
+    width: 55px;
+}
+
+#navbar a{
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+}
+
+#navbar a:hover{
+    font-size: 20px;
+    color: rgb(19, 21, 155);
+    transition: 0.5s;
+    
+}
+
+/* SERACH CONTAINER */
+
+#search-icon{
+   color: rgb(19, 21, 155);
+   display: flex;
+   position: relative;
+   align-items: end;
+   
+   
+}
+
+#search-container{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    padding: 50px;
+}
+
+#search-container h1{
+    color: #FFF;
+}
+
+#search{
+    float:left;
+}
+
+#lupa{
+    color:rgb(19, 21, 155) ;
+    float:left;
+    margin:7px 0px 0px -20px;
+    cursor:pointer
+
+ }
+
+ #lupa:after{
+    font-family:FontAwesome;
+    font-size:14px;
+    content:"\f002"
+    
+ }
+
+ #search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* EVENTS LIST */
+#events-container{
+    padding: 50px;
+}
+
+#events-container h2{
+   margin-bottom: 10px;
+}
+
+#events-container .subtitle{
+    margin-bottom: 30px;
+ }
+
+#cards-container{
+    display: flex;
+}
+
+#events-container .card{
+    flex: 1 1 0;
+    max-width: 25%;
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px;
+}
+
+#events-container img{
+    border-radius: 5px 5px 0px 0px;
+}
+
+#events-container img:hover{
+    cursor: pointer;
+}
+
+
+.card .card-date{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: rgb(70, 70, 70);
+}
+
+.card .card-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: rgb(70, 70, 70);
+}
+
+.card .card-participants{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    position: absolute;
+    color: #CCC;
+    background-color: rgb(11, 14, 90);
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    margin: 0;
+}
