@@ -11,7 +11,6 @@
         <form action="">
             <input type="text" name="search" id="search" class="form-control" placeholder="Procurar">
             <div id="lupa"></div>
-            
         </form>
 </div>
 
@@ -23,13 +22,16 @@
         <div class="card col-md-3">
             <img src="img/events/{{ $event->image }}" alt="{{$event->title}}" title="{{$event->title}}">
             <div class="card-body">
-                <p class="card-date">15/04/2004</p>
+                <p class="card-date">{{ date('d/m/Y', strtotime($event->date)) }}</p>
                 <h5 class="card-title">{{$event->title}}</h5>
                 <p class="card-participants">X participantes</p>
-                <a href="" class="btn btn-primary">Saber mais</a>
+                <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
             </div>
         </div>
         @endforeach
+        @if(count($events) == 0)
+        <p>Não há nenhum evento no momento</p>
+        @endif
     </div>
 
 </div>
