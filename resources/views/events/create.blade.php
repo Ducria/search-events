@@ -10,7 +10,7 @@
         @csrf
         <div class="form-group">
             <label for="image">Imagem do evento</label>
-            <input type="file" class="form-control-file" id="iamge" name="image">
+            <input type="file" class="form-control-file" id="image" name="image">
         </div>
         <div class="form-group">
             <label for="title">Evento</label>
@@ -63,5 +63,6 @@
 
     </form>
 </div>
+
 
 @endsection

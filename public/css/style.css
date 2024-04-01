@@ -114,6 +114,7 @@ header{
 }
 
 
+
 /* EVENTS LIST */
 #events-container{
     padding: 50px;
@@ -175,6 +176,9 @@ header{
     height: 50px;
 }
 
+#event-dipon{
+    text-decoration-line: none;
+}
 
 /* FORM DE EVENTOS */
 
