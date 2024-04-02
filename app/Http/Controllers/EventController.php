@@ -57,7 +57,7 @@ class EventController extends Controller
         }
 
         $user = auth()->user();
-        $event->id_user = $user->id;
+        $event->user_id = $user->id;
 
         $event->save();
 
@@ -67,11 +67,19 @@ class EventController extends Controller
     public function show($id){
 
         $event = Event::findOrFail($id);
-        $eventOwner = User::where('id', $event->id_user)->first();
+        $eventOwner = User::where('id', $event->user_id)->first();
 
 
         return view('events.show',['event' => $event, 'eventOwner' => $eventOwner]);
 
+    }
+
+    public function dashboard(){
+
+        $user = auth()->user();
+        $events = $user->events;
+
+        return view('events.dashboard',['events'=> $events]);
     }
 
 

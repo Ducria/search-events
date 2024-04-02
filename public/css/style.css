@@ -250,7 +250,28 @@ header{
     margin-bottom: 10px;
 }
 
-/* ITEMS LIST */
+/* DASHBOARD */
+
+.dashboard-title-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-event-container th{
+    width: 25%;
+}
+
+#pencil-edit{
+    color:rgb(19, 21, 155) ;
+}
+
+#trash-delete{
+    color:rgb(19, 21, 155) ;
+}
+
+
+
+
 
 
 /* FOOTER */
