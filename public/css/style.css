@@ -42,6 +42,13 @@ header{
     padding: 10px;
 }
 
+.already-joined-msg{
+    padding: 10px;
+    background-color: aliceblue;
+    width: 310px;
+    color:rgb(19, 21, 155) ;
+}
+
 /* NAVBAR */
 #navbar{
     justify-content: space-between;
@@ -249,6 +256,8 @@ header{
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+
 
 /* DASHBOARD */
 
