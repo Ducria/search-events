@@ -1,9 +1,16 @@
+<p align="center"> Homepage </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/b6489a7e-3289-45b8-becf-1be7af061873">
+<p align="center"> Criar um evento </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/5b52a5db-d51c-42f5-aacd-a01619719713">
+<p align="center"> Meus eventos/Eventos que confirmei presença </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/4abf44b6-5109-4bdd-b780-5e293ca97c75">
+<p align="center"> Homepage após a criação de um evento </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/198e3a63-4f11-4c8f-a08b-444c05820782">
+<p align="center"> Detalhes de um evento </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/4df5a318-93d3-40db-b3b4-f230ceda9dcb">
+<p align="center"> Meus eventos/Eventos que confirmei presença após a confirmação </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/9b95e524-f0a9-49cf-8271-3bff63b84843">
+<p align="center"> Meus eventos para o dono do evento </p>
 <img src="https://github.com/Ducria/search-events/assets/79664765/9f5ae76b-bf61-403c-b490-09e8bf7a41d6">
 
 
