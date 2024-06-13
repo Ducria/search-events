@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/img/eye-of-horus-svgrepo-com.svg">
 
         <title>@yield('title')</title>
 
@@ -33,18 +34,48 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/events/create">Criar Eventos</a>
                         </li>
+                        @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Entrar</a>
+                            <a class="nav-link" href="/dashboard">Meus Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Cadastrar</a>
+                            <form action="/logout" method="POST">
+                                @csrf
+                                <a href="/logout" 
+                                class="nav-link" 
+                                onclick="event.preventDefault(); 
+                                this.closest('form').submit()">
+                                Sair
+                            </a>
+                            </form>
                         </li>
+
+                        @endauth
+
+                        @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Cadastrar</a>
+                        </li>
+                        @endguest
                         </ul>
                     </div>
                     </div>
               </nav>
         </header>
-        @yield('content')
+        <main>
+            <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                    <p class="msg">{{ session('msg') }}</p>
+                @endif
+                @yield('content')
+            </div>
+            </div>
+            
+        </main>
         <footer>
             <p>Search Events &copy; 2024</p>
         </footer>
